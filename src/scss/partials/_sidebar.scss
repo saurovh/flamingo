@@ -1,3 +1,57 @@
 .sidebar {
+	@extend .pfix;
+	width: 80px;
+	height: 100vh;
+	background-color : #ededed;
+	top:50px;
+	background-color: #263238;
+}
+.sidenav{
+	@include mt(20px);
+    @include p(0);
+    width: 100%;
+	border-top: 1px solid #ededed;
+    ul{
+    	@include m(0);
+    	@include p(0);
+    	list-style: none;
+
+    	li{
+    		width: 100%;
+    		height: 70px;
+    		border-bottom: 1px solid #ededed;
+
+    		a{
+    			@extend .db;
+    			@include pc(10px 0 10px 0);
+    			text-align: center;
+    			text-decoration: none;
+    			i{
+    				font-size: 20px;
+    				color: #fff;
+    				@include mc(5px 0);
+    				clear:both;
+    			}
+    			.mtl{
+    				@include mc(5px 0);
+    				@include f(12px);
+    				@include lnh(15px);
+    				@include m(0);
+    				color: #fff;
+    			}
+    		}
+    		a:hover{
+    			i{color: $mhc;}
+    			.mtl{color: $mhc;}
+
+    		}
+
+    	}
+    	li:hover{
+    		background-color: #fff;
+    	}
+
+
+    }
 
 }

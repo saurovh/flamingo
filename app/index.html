@@ -1,45 +1,132 @@
+
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>Initial setup for image edit</title>
+<head>
+  <meta charset="utf-8">
+  <title>Initial setup for image edit</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link href="assets/css/style.min.css" rel="stylesheet">
-  </head>
-  <body>
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 
-    <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.png" alt="Logo">
-        </a>
-      </div>
-      <nav class="nav" role="navigation">
-        <ul>
-          <li>
-            <a href="/"></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="header" role="banner">
+    <div class="logo">
+      <a href="/">
+        <img src="assets/img/logo.png" alt="Logo">
+      </a>
+    </div>
+  </header>
+  <aside class="sidebar" role="complementary">
+    <nav class="sidenav" role="navigation">
+      <ul>
+        <li>
+          <a href="/">
+            <i class="fa fa-crop"></i>
+            <p class="mtl">Crop</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fa fa-arrows"></i>
+            <p class="mtl">Resize</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fa fa-repeat"></i>
+            <p class="mtl">Rotate</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fa fa-font"></i>
+            <p class="mtl">Text</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fa fa-pencil"></i>
+            <p class="mtl">Drawing</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-    <main class="main" role="main">
 
-    </main>
 
-    <aside class="sidebar" role="complementary">
 
-    </aside>
 
-    <footer class="footer" role="contentinfo">
 
-    </footer>
+  <main class="main" role="main">
+   <aside class="effect-range" role="complementary">
+   <div class="s-btn-group">
+     <div class="s-btn">Save</div>
+     <div class="s-btn">Cancel</div>
+   </div>
+    <div class="clear"></div>
+  </aside>
 
-    <script src="assets/js/scripts.min.js"></script>
 
-  </body>
+  <aside class="canvas-area" role="complementary">
+    <div class="mianimg">
+      <img src="/assets/img/demo.jpg" />
+    </div>
+    <div class="clear"></div>
+  </aside>
+
+  <aside class="filter-area" role="complementary">
+    <div class="effect-btn">
+      <button>Vintage</button>
+      <button>Lomo</button>
+      <button>Clarity</button>
+      <button>Sin City</button>
+      <button>Sunrise</button>
+      <button>Cross Process</button>
+      <button>Orange Peel</button>
+      <button>Love</button>
+      <button>Grungy</button>
+      <button>Jarques</button>
+      <button>Pinhole</button>
+      <button>Old Boot</button>
+      <button>Glowing Sun</button>
+      <button>Hazy Days</button>
+      <button>Her Majesty</button>
+      <button>Nostalgia</button>
+      <button>Hemingway</button>
+      <button>Concentrate</button>
+      <button>GrayScale</button>
+      <button>Invert</button>
+      <button>Sepia</button>
+      <button>Sepia2</button>
+      <button>Remove White</button>
+      <button>Brightness</button>
+      <button>Noise</button>
+      <button>Gradient</button>
+      <button>Sharpen</button>
+      <button>Blur</button>
+      <button>Embose</button>
+      <button>Tint</button>
+      <button>Multiply</button>
+      <button>Blend</button>
+    </div>
+    <div class="clear"></div>
+  </aside>
+
+</main>
+
+
+
+<footer class="footer" role="contentinfo">
+
+</footer>
+
+<script src="assets/js/scripts.min.js"></script>
+
+</body>
 </html>
