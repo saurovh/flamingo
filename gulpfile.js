@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     eslint = require('gulp-eslint'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
+    plumber = require('gulp-plumber'),
+    concat = require('gulp-concat'),
     cssnano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
     package = require('./package.json');
@@ -37,11 +39,21 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
+var srcDir = './src/js/',
+    files;
+files = [
+    srcDir + 'scripts.js',
+    srcDir + 'utils.js',
+    srcDir + 'init.js'
+];
+
 gulp.task('js',function(){
-  gulp.src('src/js/scripts.js')
+  gulp.src(files)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(eslint('.eslintrc.json'))
     .pipe(eslint.format())
+    .pipe(concat('flamingo.js', {newLine: ';'}))
     .pipe(header(banner, { package : package }))
     .pipe(gulp.dest('app/assets/js'))
     .pipe(uglify())
