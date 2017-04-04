@@ -1,3 +1,78 @@
 .main {
+@include mc(100px 50px 50px 130px);
+border-radius: 10px;
+min-height: 100vh;
+}
 
+
+.main{
+	.mcomn{
+		background-color: #fff;
+		border: 1px solid #b0a66b;
+		border-radius: 10px;
+		@include p(15px);
+		@include mc(15px 0);
+	}
+	.effect-range{
+		min-height: 150px;
+		@extend .mcomn;
+		display: table;
+    	width: 100%;
+		.s-btn-group{
+			display: table-cell;
+    		vertical-align: middle;
+    		text-align: right;
+		}
+		.s-btn{
+			color: #000;
+    		background-color: #fff;
+    		border: 1px solid #ccc;
+    		border-radius: 8px;
+    		@include pc(7px 24px);
+    		@include mc(0 5px);
+			@extend .dinb;
+			text-align: center;
+		}
+		.s-btn:hover{
+			background-color: #4caf50;
+			border: 1px solid #468d49;
+			@extend .cp;
+			color: #fff;
+		}
+	}
+	.canvas-area{
+		min-height: 400px;
+		@extend .mcomn;
+	}
+	.filter-area{
+		min-height: 150px;
+		@extend .mcomn;
+	}
+}
+.mianimg{
+	width:600px;
+	@include m(0 auto);
+    @include p(0px);
+	img{
+	width:100%;
+	border:1px solid #ededed;
+	}
+}
+.effect-btn{
+	text-align: center;
+	button{
+	background-color: #4caf50;
+	border: 1px solid #468d49;
+	@include pc(7px 24px);
+	@extend .dinb;
+	text-align: center;
+	@extend .cp;
+	color: #fff;
+	@include mc(0 5px 10px);
+	}
+	button:hover{
+	background-color: #468d49;
+	transition: background-color .2s linear;
+	box-shadow: 0 8px 16px 0 rgba(93, 89, 89, 0.2), 0 6px 24px 0 rgba(81, 79, 79, 0.19);
+	}
 }

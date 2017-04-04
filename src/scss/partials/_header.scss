@@ -1,5 +1,11 @@
 .header {
-
+    width: 100%;
+    height: 50px;
+    background-color: #4caf50;
+    @include m(0px);
+    @include p(0px);
+    top: 0px;
+    @extend .pfix;
 }
 .logo {
   margin: -58px 0 0 -100px;

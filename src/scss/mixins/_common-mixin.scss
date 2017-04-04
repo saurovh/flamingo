@@ -1,0 +1,123 @@
+//background-color
+@mixin bg($bg){
+    background-color: $bg; 
+}
+//color
+@mixin c($c){
+    color: $c;
+}
+//margin
+@mixin m($m){
+    margin : $m;
+}
+@mixin ml($ml){
+    margin-left : $ml;
+}
+@mixin mr($mr){
+    margin-right : $mr;
+}
+@mixin mt($mt){
+    margin-top : $mt;
+}
+@mixin mb($mb){
+    margin-bottom: $mb;
+}
+@mixin mc($mc){
+    margin : $mc;
+}
+
+//padding
+@mixin p($p){
+    padding : $p;
+}
+@mixin pl($pl){
+    padding-left : $pl;
+}
+@mixin pr($pr){
+    padding-right : $pr;
+}
+@mixin pt($pt){
+    padding-top : $pt;
+}
+@mixin pb($pb){
+    padding-bottom: $pb;
+}
+@mixin pc($pc){
+    padding : $pc;
+}
+
+//border
+@mixin b($px, $color){
+    border: $px solid $color;
+}
+@mixin bl($px, $color){
+    border-left: $px solid $color;
+}
+@mixin br($px, $color){
+    border-right: $px solid $color;
+}
+@mixin bt($px, $color){
+    border-top: $px solid $color;
+}
+@mixin bb($px, $color){
+    border-bottom: $px solid $color;
+}
+
+//height
+@mixin h($h){
+    height: $h;
+}
+//width
+@mixin w($w){
+    width: $w;
+}
+//size
+@mixin size($h, $w){
+    height: $h;
+    width: $w;
+}
+
+//font
+@mixin f($font){
+    font-size: $font;    
+}
+@mixin fw($fw){
+    font-weight: $fw;
+}
+@mixin lnh($lnh){
+    line-height: $lnh;
+}
+//position
+@mixin pos($pos){
+    position: $pos;
+}
+//overflow
+@mixin ovf($ovf){
+    overflow: $ovf;
+}
+//float
+@mixin flt($float){
+    float: $float;
+}
+//text-align
+@mixin t($text-align){
+    text-align: $text-align;
+}
+//border-radius
+@mixin b_radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+//cursor
+@mixin cur($cursor){
+    cursor: $cursor;
+}
+
+@mixin zin($zin){
+    z-index: $zin;
+}
+@mixin ve($ve){
+    vertical-align: $ve;
+}

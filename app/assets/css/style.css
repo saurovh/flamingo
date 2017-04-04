@@ -22,8 +22,7 @@ body {
   transition: all .4s .3s ease-in; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -391,6 +390,70 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.bg-white {
+  background: #ffffff; }
+
+.bg-orange {
+  background: #f77727; }
+
+.col-white {
+  color: #ffffff; }
+
+.col-orange {
+  color: #f77727; }
+
+.bdbox {
+  box-sizing: border-box; }
+
+.txt-ovf {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.tdn {
+  text-decoration: none; }
+
+.db, .sidenav ul li a {
+  display: block; }
+
+.dinb, .main .effect-range .s-btn, .effect-btn button {
+  display: inline-block; }
+
+.dn {
+  display: none; }
+
+.prel {
+  position: relative; }
+
+.pabs {
+  position: absolute; }
+
+.pfix, .header, .sidebar {
+  position: fixed; }
+
+.tl {
+  text-align: left; }
+
+.tr {
+  text-align: right; }
+
+.tc {
+  text-align: center; }
+
+.cd {
+  cursor: default; }
+
+.cp, .main .effect-range .s-btn:hover, .effect-btn button {
+  cursor: pointer; }
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #4caf50;
+  margin: 0px;
+  padding: 0px;
+  top: 0px; }
+
 .logo {
   margin: -58px 0 0 -100px;
   position: absolute;
@@ -399,6 +462,109 @@ textarea {
 
 .nav ul {
   list-style: none; }
+
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  background-color: #ededed;
+  top: 50px;
+  background-color: #263238; }
+
+.sidenav {
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid #ededed; }
+  .sidenav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .sidenav ul li {
+      width: 100%;
+      height: 70px;
+      border-bottom: 1px solid #ededed; }
+      .sidenav ul li a {
+        padding: 10px 0 10px 0;
+        text-align: center;
+        text-decoration: none; }
+        .sidenav ul li a i {
+          font-size: 20px;
+          color: #fff;
+          margin: 5px 0;
+          clear: both; }
+        .sidenav ul li a .mtl {
+          margin: 5px 0;
+          font-size: 12px;
+          line-height: 15px;
+          margin: 0;
+          color: #fff; }
+      .sidenav ul li a:hover i {
+        color: #f77727; }
+      .sidenav ul li a:hover .mtl {
+        color: #f77727; }
+    .sidenav ul li:hover {
+      background-color: #fff; }
+
+.main {
+  margin: 100px 50px 50px 130px;
+  border-radius: 10px;
+  min-height: 100vh; }
+
+.main .mcomn, .main .effect-range, .main .canvas-area, .main .filter-area {
+  background-color: #fff;
+  border: 1px solid #b0a66b;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0; }
+
+.main .effect-range {
+  min-height: 150px;
+  display: table;
+  width: 100%; }
+  .main .effect-range .s-btn-group {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right; }
+  .main .effect-range .s-btn {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 7px 24px;
+    margin: 0 5px;
+    text-align: center; }
+  .main .effect-range .s-btn:hover {
+    background-color: #4caf50;
+    border: 1px solid #468d49;
+    color: #fff; }
+
+.main .canvas-area {
+  min-height: 400px; }
+
+.main .filter-area {
+  min-height: 150px; }
+
+.mianimg {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0px; }
+  .mianimg img {
+    width: 100%;
+    border: 1px solid #ededed; }
+
+.effect-btn {
+  text-align: center; }
+  .effect-btn button {
+    background-color: #4caf50;
+    border: 1px solid #468d49;
+    padding: 7px 24px;
+    text-align: center;
+    color: #fff;
+    margin: 0 5px 10px; }
+  .effect-btn button:hover {
+    background-color: #468d49;
+    transition: background-color .2s linear;
+    box-shadow: 0 8px 16px 0 rgba(93, 89, 89, 0.2), 0 6px 24px 0 rgba(81, 79, 79, 0.19); }
 
 @font-face {
   font-family: 'Font-Name';
